@@ -1,0 +1,7 @@
+<div class="container">
+  <a href="/notes/new">New</a>
+  <% @notes.each do |note| %>
+  <p><a href=<%="/notes/#{note.id}/edit"%>><%= note.title %></a>- <%= note.content %></p>
+  <% end %>
+
+</div>
